@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Кастомные стили -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="bg-dark text-white py-3">
+      <div class="container d-flex justify-content-between align-items-center">
+          <!-- Левый блок с логотипом и поиском -->
+          <div class="d-flex align-items-center">
+              <a href="#" class="navbar-brand d-flex align-items-center">
+                  <img src="img/logo.svg" alt="Логотип THE BRAND" class="logo me-2">
+              </a>
+              <button class="btn btn-link text-white p-0" style="margin-left: 41px;" aria-label="Поиск">
+              <img src="img/search.svg" alt="Поиск">
+          </button>
+
+          </div>
+
+          <!-- Правый блок с меню и иконками -->
+          <div class="d-flex align-items-center">
+              <button class="btn btn-link text-white p-0 me-2"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                  <img src="img/menu.png" alt="Меню">
+              </button>
+
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+      <div class="offcanvas-header">
+          <button type="button" class="btn-close ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title" id="offcanvasMenuLabel">MENU</h5>
+      </div>
+      <div class="offcanvas-body">
+          <ul class="nav flex-column">
+              <li class="nav-item">
+                  <a class="nav-link G" href="#">MAN</a>
+                  <ul class="nav flex-column ms-3">
+                      <li class="nav-item"><a class="nav-link L" href="#" >Accessories</a></li>
+                      <li class="nav-item"><a class="nav-link L" href="#" >Bags</a></li>
+                      <li class="nav-item"><a class="nav-link L" href="#">Denim</a></li>
+                      <li class="nav-item"><a class="nav-link L" href="#">T-Shirts</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link G" href="#">WOMAN</a>
+                  <ul class="nav flex-column ms-3">
+                      <li class="nav-item"><a class="nav-link L" href="#">Accessories</a></li>
+                      <li class="nav-item"><a class="nav-link L" href="#">Jackets & Coats</a></li>
+                      <li class="nav-item"><a class="nav-link L" href="#">Polos</a></li>
+                      <li class="nav-item"><a class="nav-link L" href="#">T-Shirts</a></li>
+                      <li class="nav-item"><a class="nav-link L" href="#">Shirts</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link G" href="#">KIDS</a>
+                  <ul class="nav flex-column ms-3">
+                      <li class="nav-item"><a class="nav-link L" href="#">Accessories</a></li>
+                      <li class="nav-item"><a class="nav-link L" href="#">Jackets & Coats</a></li>
+                      <li class="nav-item"><a class="nav-link L" href="#">Polos</a></li>
+                      <li class="nav-item"><a class="nav-link L" href="#">T-Shirts</a></li>
+                      <li class="nav-item"><a class="nav-link L" href="#">Shirts</a></li>
+                      <li class="nav-item"><a class="nav-link L" href="#">Bags</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+              </div>
+
+
+              <button class="btn btn-link text-white p-0 me-2"  style="margin-left: 25px;"  aria-label="Аккаунт">
+                  <img src="img/login.png" alt="Аккаунт">
+              </button>
+
+              <div style="margin-left: 42px; position: relative;">
+                <button class="btn btn-link text-white p-0" onclick="window.location.href='page/cart.html';"  aria-label="Корзина">
+                    <img src="img/cor.png" alt="Корзина">
+                </button>
+                <span class="badge rounded-circle position-absolute top-0 end-0">5</span>
+                </div>
+</div>
+
+          </div>
+  </header>
+
+
+
+
+
+
+
+<div class="brand-block" style="width: 100%; padding: 0;">
+    <div class="container" style="display: flex; align-items: center;  width: 100%; padding: 0; margin: 0px;">
+        <!-- Левый блок с изображением -->
+        <div class="image" style="width: 100%;">
+            <img src="img/man.png" alt="Image" style="width: 100%; height: auto;">
+        </div>
+
+        <!-- Правый блок с текстом -->
+  <div class="text" style="">
+      <!-- Линия, обвивающая две строки -->
+      <div class="rectangle"></div>
+
+      <div class="luxury-fashion1">
+          <div class="brand-name">THE BRAND</div>
+      </div>
+
+      <div class="luxury-fashion2">
+          <span class="luxury">OF LUXERIOUS</span>
+          <span class="fashion" >FASHION</span>
+      </div>
+  </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="image-text-block">
+    <div class="container py-5">
+    <!-- Первая строка -->
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="position-relative text-center">
+                <img src="img/forWomen.png" alt="Image 1" class="img-fluid">
+                <div class="position-absolute top-50 start-50 translate-middle text-white text-uppercase">
+                    <h4 class="fw-bold">30% Off</h4>
+                    <h5 class="text-danger">For Women</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="position-relative text-center">
+                <img src="img/forMan.jpg" alt="Image 2" class="img-fluid">
+                <div class="position-absolute top-50 start-50 translate-middle text-white text-uppercase">
+                    <h4 class="fw-bold">Hot Deal</h4>
+                    <h5 class="text-danger">For Man</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="position-relative text-center">
+                <img src="img/forKids.jpg" alt="Image 3" class="img-fluid">
+                <div class="position-absolute top-50 start-50 translate-middle text-white text-uppercase">
+                    <h4 class="fw-bold">New Arrivals</h4>
+                    <h5 class="text-danger">For Kids</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Вторая строка -->
+    <div class="row g-4 mt-4">
+        <div class="col-12">
+            <div class="position-relative text-center">
+                <img src="img/forXZ.jpg" alt="Image 4" class="img-fluid">
+                <div class="position-absolute top-50 start-50 translate-middle text-white text-uppercase">
+                    <h4 class="fw-bold">Luxurious & Trendy</h4>
+                    <h5 class="text-danger">Accessories</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="product-block">
+    <div class="container">
+        <!-- Заголовки -->
+        <div class="agggg">Featured Items</div>
+        <div class="agggg2">Shop for items based on what we featured this week</div>
+
+        <!-- Первая строка с продуктами -->
+        <div class="row">
+            <!-- Продукт 1 -->
+            <div class="product-item">
+              <img src="img/1.png" class="product-image" alt="Product 1">
+              <div class="product-title">ELLERY X M'O CAPSULE</div>
+              <div class="product-description">
+                Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+              </div>
+            <div class="product-price">$52.0</div>
+            <div class="add-to-cart">
+            <img src="img/cor.png" alt="Корзина" class="cart-icon">
+            <span class="cart-text">Add to Cart</span>
+        </div>
+          </div>
+            <!-- Продукт 2 -->
+            <div class="product-item" >
+                <img src="img/2.png" class="product-image" alt="Product 2" >
+                <div class="product-title">ELLERY X M'O CAPSULE</div>
+                <div class="product-description">
+                    Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                </div>
+                <div class="product-price" >$52.0</div>
+                <div class="add-to-cart">
+            <img src="img/cor.png" alt="Корзина" class="cart-icon">
+            <span class="cart-text">Add to Cart</span>
+        </div>
+            </div>
+            <!-- Продукт 3 -->
+            <div class="product-item" >
+                <img src="img/3.png" class="product-image" alt="Product 3" >
+                <div class="product-title" >ELLERY X M'O CAPSULE</div>
+                <div class="product-description" >
+                    Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                </div>
+                <div class="product-price">$52.0</div>
+                <div class="add-to-cart">
+            <img src="img/cor.png" alt="Корзина" class="cart-icon">
+            <span class="cart-text">Add to Cart</span>
+        </div>
+            </div>
+        </div>
+
+        <!-- Вторая строка с продуктами -->
+        <div class="row" >
+            <!-- Продукт 4 -->
+            <div class="product-item" >
+                <img src="img/4.png" class="product-image" alt="Product 4" >
+                <div class="product-title" >ELLERY X M'O CAPSULE</div>
+                <div class="product-description" >
+                    Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                </div>
+                <div class="product-price" >$52.0</div>
+                <div class="add-to-cart">
+            <img src="img/cor.png" alt="Корзина" class="cart-icon">
+            <span class="cart-text">Add to Cart</span>
+        </div>
+            </div>
+            <!-- Продукт 5 -->
+            <div class="product-item" >
+                <img src="img/5.png" class="product-image" alt="Product 5" >
+                <div class="product-title" >ELLERY X M'O CAPSULE</div>
+                <div class="product-description" >
+                    Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                </div>
+                <div class="product-price" >$52.0</div>
+                <div class="add-to-cart">
+            <img src="img/cor.png" alt="Корзина" class="cart-icon">
+            <span class="cart-text">Add to Cart</span>
+        </div>
+            </div>
+            <!-- Продукт 6 -->
+            <div class="product-item" >
+                <img src="img/6.png" class="product-image" alt="Product 6" >
+                <div class="product-title" >ELLERY X M'O CAPSULE</div>
+                <div class="product-description" >
+                    Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                </div>
+                <div class="product-price" >$52.0</div>
+                <div class="add-to-cart">
+            <img src="img/cor.png" alt="Корзина" class="cart-icon">
+            <span class="cart-text">Add to Cart</span>
+        </div>
+            </div>
+        </div>
+
+        <!-- Кнопка "Browse All Products" -->
+        <button class="btn btn-outline-dark" onclick="window.location.href='page/catalog.html';">Browse All Products</button>
+       </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="features-section">
+    <div class="features-container">
+        <!-- Первый блок -->
+        <div class="feature-item">
+            <img src="img/futere3.png" alt="Free Delivery">
+            <div class="feature-title">Free Delivery</div>
+            <div class="feature-description">
+                Worldwide delivery on all. Authoritatively morph next-generation innovation with extensive models.
+            </div>
+        </div>
+        <!-- Второй блок -->
+        <div class="feature-item">
+            <img src="img/futere2.png" alt="Sales & discounts">
+            <div class="feature-title">Sales & discounts</div>
+            <div class="feature-description">
+                Worldwide delivery on all. Authoritatively morph next-generation innovation with extensive models.
+            </div>
+        </div>
+        <!-- Третий блок -->
+        <div class="feature-item">
+            <img src="img/futere1.png" alt="Quality assurance">
+            <div class="feature-title">Quality assurance</div>
+            <div class="feature-description">
+                Worldwide delivery on all. Authoritatively morph next-generation innovation with extensive models.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="testimonial-section">
+    <div class="testimonial-content d-flex flex-row align-items-center justify-content-between text-white py-5 w-100">
+        <!-- Текст с цитатой -->
+        <div class="testimonial-text d-flex flex-column align-items-center">
+    <img src="img/Intersect.png" width="96" alt="Quote" class="mb-3">
+    <div>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</div>
+</div>
+
+<!-- Блок подписки -->
+<div class="subscribe text-center">
+    <h2 class="subscribe-title">SUBSCRIBE</h2>
+    <p class="subscribe-description">FOR OUR NEWSLETTER AND PROMOTION</p>
+    <form id="subscribe-form" class="d-flex align-items-center" style="gap: 0;">
+      <input type="email" id="email-input" class="form-control me-2" placeholder="Enter Your Email">
+      <button type="submit" id="btn-email" class="btn btn-primary">Subscribe</button>
+    </form
+</div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-dark text-white py-4">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+        <div>© 2024 Brand All Rights Reserved.</div>
+        <div class="d-flex gap-3">
+          <a href="#" class="social-icon">
+        <img class="default" src="img/f.png" alt="Facebook" width="24">
+        <img class="hover" src="img/f1.png" alt="Facebook" width="24">
+    </a>
+    <a href="#" class="social-icon">
+        <img class="default" src="img/i.png" alt="Instagram" width="24">
+        <img class="hover" src="img/i1.png" alt="Instagram" width="24">
+    </a>
+    <a href="#" class="social-icon">
+        <img class="default" src="img/p.png" alt="Pinterest" width="24">
+        <img class="hover" src="img/p1.png" alt="Pinterest" width="24">
+    </a>
+    <a href="#" class="social-icon">
+        <img class="default" src="img/t.png" alt="Twitter" width="24">
+        <img class="hover" src="img/t1.png" alt="Twitter" width="24">
+    </a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+  <!-- Подключаем JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
